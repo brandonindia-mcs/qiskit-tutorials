@@ -78,8 +78,8 @@ def decrypt_message(private_key_path, ciphertext_file_path):
 
   return plaintext
 
-private_key_path = "./owner_private_key.pem"
-public_key_path = "./owner_public_key.pem"
+private_key_path = "./app/shared/owner_private_key.pem"
+public_key_path = "./app/shared/owner_public_key.pem"
 private = make_private_pem(keyname=private_key_path)
 public = make_public_pem(private_key_path, public_key_path)
 print(f"Created {private} and {public}")

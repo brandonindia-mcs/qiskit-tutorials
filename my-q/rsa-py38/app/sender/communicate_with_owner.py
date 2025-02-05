@@ -25,8 +25,8 @@ def encrypt_message(public_key_path="./public_key.pem", ciphertext_file_path="ci
 # byte_text = b"magellic!"  # Replace with your actual ciphertext
 
 def main():
-    public_key_path = "./owner_public_key.pem"
-    ciphertext = "encrypted_message_from_sender.bin"
+    public_key_path = "./app/shared/owner_public_key.pem"
+    ciphertext = "./app/owner/encrypted_message_from_sender.bin"
     try:
         # Read input from the terminal as bytes
         byte_text = input("Enter a string: ").encode('utf-8')
